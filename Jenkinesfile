@@ -13,9 +13,10 @@ pipeline {
         
         
        
-        }stage('Test') {
+        }
+	stage('Test') {
             steps {
-                bat 'mvn install'
+                bat 'mvn test'
             }
 			post {
                 always {
